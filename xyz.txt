@@ -1,0 +1,34 @@
+#include <iostream.h>
+#include<conio.h>
+void print()
+{
+cout<<"\n-----------------";
+}
+void print(int a)
+{
+cout<<"\n";
+for(int i = 1; i <= a; i++)
+{
+cout<<"#";
+}
+}
+void print(int a, char c)
+{
+cout<<"\n";
+for(int i = 1; i <= a; i++)
+{
+cout<<c;
+}
+}
+int main()
+{
+clrscr();
+int x;
+cout<<"\nEnter number : ";
+cin>>x;
+print();
+print(x);
+print(x, '$');
+getch();
+return 0;
+}
